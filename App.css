@@ -1,0 +1,93 @@
+
+/*
+.App {
+  text-align: center;
+}
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+*/
+
+.telNumber {
+	float: left;
+	width:25%;
+	
+}
+
+.Model{
+    float: left;
+	width:25%;
+	
+}
+
+
+.Issue{
+    float: left;
+	width:25%;
+	
+}
+
+.Note{
+    float: left;
+	width:25%;
+
+}
+
+#search{
+	position: relative;
+    left: 30px;
+}
+
+#sub{
+	
+	position: relative;
+    left: 30px;
+}
+ /* .Navigation{
+  	width: 100%;
+  }
+*/
+.UserMode{
+	background-color:green;
+	width:100%;
+	height:100%;
+	border-color:red;
+	
+}
+.Control{
+        width:100%;
+	height:25%;
+
+}	
+.UserNav {
+        width: 60%;
+		height:100%;
+        float: left;
+		background-color:yellow;
+
+}
+
+.Login{
+    width: 40%;
+	height:100%;
+    float: left;
+	background-color:red;
+}
+
+.Output{
+   float: left;
+   height: 75%;
+   width:100%;
+   background-color:blue;
+
+}
