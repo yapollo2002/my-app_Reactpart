@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import Control from './Control';
 import Output from './Output';
+import {Stocks} from './Stocks';
 
 
 export default class Usermode extends Component {

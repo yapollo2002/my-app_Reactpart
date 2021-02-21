@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
+import  {Stocks} from './Stocks';
 
 export default class Output extends Component{
 render(){
@@ -42,14 +43,15 @@ render(){
              type='Note'
               name='Note'
 			  value='Note'
-			  className='Note'
-             //onChange={this.myChangeHandler}
+			  //onChange={this.myChangeHandler}
              />
 		  </div>
 		  
 	     </div>
-	  <p> {this.props.telnum} </p>
-	  </body>
+	 {/* <p> {this.props.telnum} </p>*/}
+	  
+         </body>
+        <Stocks/>
 	</div>
 	
   );
