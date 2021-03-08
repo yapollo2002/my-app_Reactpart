@@ -3,6 +3,8 @@ import './App.css';
 import Control from './Control';
 import Output from './Output';
 import {Stocks} from './Stocks';
+import {Table} from './Table';
+import {useTable} from  'react-table';
 
 
 export default class Usermode extends Component {
@@ -34,9 +36,12 @@ export default class Usermode extends Component {
 		return(
 		
 		<div className="UserMode">
-		<Control handle={this.handle}/>
-		<Output telnum={this.state.telnum}/>
+
+	       	<Control handle={this.handle}/> 
+			{/*<Output telnum={this.state.telnum}/>*/}
+			<Table/>
 			
+    			
 		</div>
 		);
 		

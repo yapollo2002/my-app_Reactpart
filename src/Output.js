@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
 import './App.css';
 import  {Stocks} from './Stocks';
+import  {Table} from './Table';
 
 export default class Output extends Component{
 render(){
 	return (
     <div className="Output">
       
-	  <body className="Main">
+	  {/*   <body className="Main">
 	  
 	     <div className="Title">
 		  <div className="telNumber">
@@ -48,11 +49,12 @@ render(){
 		  </div>
 		  
 	     </div>
-	 {/* <p> {this.props.telnum} </p>*/}
+	  <p> {this.props.telnum} </p>
 	  
-         </body>
-        <Stocks/>
+	  </body>       */}
+        <Table/>
 	</div>
+	
 	
   );
 }
