@@ -88,7 +88,7 @@ export default class Usermode extends Component {
                 
         			
 
-                 this.setState({data:data});
+                  this.setState({data:data});
                                  } 
               
 
