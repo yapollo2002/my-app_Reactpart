@@ -43,10 +43,10 @@ export default class Usermode extends Component {
                   componentDidMount(){
          const data = [
        {
-         "phoneNumber": 1,
-         "model": 'World',
-         "issue": 'Hello',
-         "notes": 'World',
+         "phoneNumber": 996320011,
+         "model": 'Sony',
+         "issue": 'no power',
+         "notes": 'remote',
        },
        {
          "phoneNumber": 2,
