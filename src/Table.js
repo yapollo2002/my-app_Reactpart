@@ -3,7 +3,7 @@
  
  
 export  const  Table=(props)=> {
-     const data =(props.data); 
+     const data =props.data; 
        console.log(data);  
 
 {/*const data = React.useMemo(

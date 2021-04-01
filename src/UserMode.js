@@ -32,10 +32,16 @@ export default class Usermode extends Component {
            headers: {
       'Content-Type': 'application/json'
     }
-  });
-           
-  			
-		}
+  })
+                        .then(res=>res.json)
+                        .then((result)=>{
+                        this.setState({
+                          data:result.item
+                        });
+                        }
+                        )           
+  			}
+		
 
              
 
@@ -43,7 +49,7 @@ export default class Usermode extends Component {
                   componentDidMount(){
          const data = [
        {
-         "phoneNumber": 996320011,
+         "phoneNumber": '0996320011',
          "model": 'Sony',
          "issue": 'no power',
          "notes": 'remote',
