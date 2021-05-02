@@ -5,6 +5,7 @@ import Output from './Output';
 import {Stocks} from './Stocks';
 import {Table} from './Table';
 import {useTable} from  'react-table';
+import axios from 'axios';
   export const Con=(props)=>{
            console.log({props});
            return(<>{props.data} </> )
@@ -14,8 +15,9 @@ export default class Usermode extends Component {
 	constructor(props){
 		super(props);
 		this.state={telnum:''};
+                this.state={receipts:[]};   
                 this.state={data:[]};
-		this.handle=this.handle.bind(this);
+                this.handle=this.handle.bind(this);
 	}
 
 
@@ -24,22 +26,14 @@ export default class Usermode extends Component {
 						
 			this.setState({telnum:telnum});
 			
-			const url = 'http://localhost:8080';
-			
-			fetch(url, {
-           method: 'POST', 
-           body: JSON.stringify(this.state.telnum), 
-           headers: {
-      'Content-Type': 'application/json'
-    }
-  })
-                        .then(res=>res.json)
-                        .then((result)=>{
-                        this.setState({
-                          data:result.item
-                        });
-                        }
-                        )           
+			const url = 'http://localhost:8080/all';
+			axios(url, {mode:'no-cors'})
+			//fetch(url, {mode:'no-cors'})
+                        //.then(res=>res.json)
+                        .then(result=>this.setState({data:result.data}) )
+                        .then(receipts=>console.log(this.state.receipts));
+
+                                   
   			}
 		
 
@@ -48,19 +42,22 @@ export default class Usermode extends Component {
 	
                   componentDidMount(){
          const data = [
-       {
-         "phoneNumber": '0996320011',
+       { 
+         "id":1,
+         "phoneNumber": 996320011,
          "model": 'Sony',
          "issue": 'no power',
          "notes": 'remote',
        },
        {
+         "id":2,
          "phoneNumber": 2,
          "model": 'rocks',
          "issue": 'Hello',
          "notes": 'World', 
        },
        {
+         "id":3,
          "phoneNumber": 3,
          "model": 'you want',
          "issue": 'Hello',

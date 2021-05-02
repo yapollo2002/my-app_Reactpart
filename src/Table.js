@@ -4,7 +4,7 @@
  
 export  const  Table=(props)=> {
      const data =props.data; 
-       console.log(data);  
+      // console.log(data);  
 
 {/*const data = React.useMemo(
      () => [
@@ -52,13 +52,14 @@ export  const  Table=(props)=> {
          "notes": 'World',
        },
      ];  
-       console.log(data1); 
+     //  console.log(data1); 
  
    const columns = React.useMemo(
      () => [
+        
        {
-         Header: 'PhoneNumber',
-         accessor: 'phoneNumber', // accessor is the "key" in the data
+         Header: 'Id',
+         accessor: 'id', // accessor is the "key" in the data
        },
        {
          Header: 'Model',
