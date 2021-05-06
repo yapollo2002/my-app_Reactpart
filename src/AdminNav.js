@@ -1,13 +1,17 @@
-import React, "{Component} from 'react';
+import React, {Component} from 'react';
 
 
 export default class AdminNav extends Component {
 	
-	rendeer() {
+	render() {
 		return(
-		
-		)
-		
+             <div className="AdminNav">
+         <p> AdminNav </p>
+         <form>    
+
+         </form> 
+         </div>
+                )		
 	}
 
 }
