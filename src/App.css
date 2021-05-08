@@ -59,8 +59,21 @@
     left: 30px;
 }
 
+#adminsearch{
+        width:70%;
+	position: relative;
+    left: 30px;
+}
+
+
 #sub{
 	
+	position: relative;
+    left: 30px;
+} 
+
+#adminsub{
+	width: 70%;	
 	position: relative;
     left: 30px;
 } 
@@ -84,6 +97,15 @@
 
 }	
 .UserNav {
+        width: 60%;
+	height:100%;
+        float: left;
+	background-color:yellow;
+
+}
+
+.AdminNav {
+        display: flex;
         width: 60%;
 	height:100%;
         float: left;
@@ -135,3 +157,18 @@ td {
   border: 1px solid gray;
   width: 30em;
 }  */}
+
+.formcolum {
+   background-color:blue;
+   width:50%;
+   height:100%;
+}
+
+.bottunscolum {
+   position: relative;
+   background-color:green;
+   float: left;
+   width:50%;
+   height:100%;
+   
+}

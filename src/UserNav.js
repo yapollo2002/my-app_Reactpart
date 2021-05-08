@@ -38,10 +38,10 @@ export default class UserNav extends Component {
 	  <form>
        <label>
 	   <h1>Hello {this.state.telnum}</h1>
-      <input type="text" name="search" onChange= {this.myChangeHandler}/>
+      <input type="text" name="adminsearch" onChange= {this.myChangeHandler}/>
        </label>
       
-	  <input type="submit" id="sub" value="Пошук" onClick={this.handle} />
+	  <input type="submit" id="adminsub" value="Пошук" onClick={this.handle} />
 	  {this.state.errormessage}
       </form>
      </div>              

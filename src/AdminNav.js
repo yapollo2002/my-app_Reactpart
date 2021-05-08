@@ -32,12 +32,23 @@ export default class AdminNav extends Component {
 	render() {
 		return(
              <div className="AdminNav">
-         <p> AdminNav </p>
+         
+        <div className="formcolum">
+        <p> AdminNav </p>
          <form>    
-            <input type="text" name="search" onChange={this.myChangeHandler}/>
+            <input type="text" name="adminsearch" id="adminsearch" onChange={this.myChangeHandler}/>
 
             <input type="text" id="adminsub"  value="Пошук" onclic={this.hanle}/>
          </form> 
+         </div>
+        
+         <div className="bottunscolum">
+             <button> New </button>
+             <br/>
+             <button> Update </button>
+             <br/>
+             <button> Delete </button>
+         </div>
          </div>
                 )		
 	}
