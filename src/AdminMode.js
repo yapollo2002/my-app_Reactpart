@@ -6,6 +6,7 @@ export default class AdminMode extends Component {
 	//const isAdminMode = this.props.isAdminMode;
         constructor(props) {
       super(props);
+            this.state={data:[]};
 	 // this.state={inputtext:' '};
       //this.handler = this.handler.bind(this);
    }
@@ -14,7 +15,7 @@ export default class AdminMode extends Component {
 	render () {
     
     return (
-	<div > <AdminControl/>  </div>
+	<div > <AdminControl data={this.state.data}/>  </div>
         	
            );  
   }

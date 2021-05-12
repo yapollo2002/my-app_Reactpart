@@ -43,11 +43,11 @@ export default class AdminNav extends Component {
          </div>
         
          <div className="bottunscolum">
-             <button> New </button>
+             <button id="adminbutton">  New </button>
              <br/>
-             <button> Update </button>
+             <button id="adminbutton"> Update </button>
              <br/>
-             <button> Delete </button>
+             <button id="adminbutton"> Delete </button>
          </div>
          </div>
                 )		

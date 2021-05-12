@@ -15,7 +15,8 @@ export default class Usermode extends Component {
 	constructor(props){
 		super(props);
 		this.state={telnum:''};
-                this.state={receipts:[]};   
+                this.state={receipts:[]};
+                this.state={ismodifier:false};   
                 this.state={data:[]};
                 this.handle=this.handle.bind(this);
 	}
@@ -101,10 +102,8 @@ export default class Usermode extends Component {
 		<div className="UserMode">
 
 	       	<Control handle={this.handle}/> 
-			{/*<Output telnum={this.state.telnum}/>*/}
-			<Table data={this.state.data}/>
-                          {/*     <Con data={this.state.data}/> */}
-                         
+			<Output data={this.state.data} ismodifier={this.state.ismodifier}/>
+			                
 			      
     			
 		</div>
