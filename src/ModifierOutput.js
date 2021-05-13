@@ -11,9 +11,24 @@ export default class ModifierOutput extends Component{
    }
 
 render(){
-	return (
-    <div className="Output">
+	return (       
+    <div className="ModifierOutput">
     	 <p> ModifierMode </p>
+         <div className="descriptioninput">
+         <input type="text" name="phonenumber" value="phonenumber" />
+         <br/>
+         <br/>
+         <input type="text" name="model"  value="model" />
+         <br/>
+         <br/>
+         <input type="text" name="issue"  value="issue" />
+         </div>
+         
+         <div className="notesinput" >
+         <input type="text" name="notes"  value="notes" />
+         </div>
+         
+
 	</div>
 	
 	
