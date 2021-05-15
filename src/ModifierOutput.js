@@ -9,23 +9,34 @@ export default class ModifierOutput extends Component{
 	  
           
    }
+         handle = (event)=> {
+		 event.preventDefault();
+		// this.props.handle(this.state.telnum);
+		 
+		 
+	 }
+
 
 render(){
 	return (       
     <div className="ModifierOutput">
-    	 <p> ModifierMode </p>
+    	 
          <div className="descriptioninput">
-         <input type="text" name="phonenumber" value="phonenumber" />
+         <p> ModifierMode </p>
+         
+         <input type="text" name="phonenumber" value="phonenumber" size='35' />
          <br/>
          <br/>
-         <input type="text" name="model"  value="model" />
+         <input type="text" name="model"  value="model" size='35' />
          <br/>
          <br/>
-         <input type="text" name="issue"  value="issue" />
+         <input type="text" name="issue"  value="issue" size='35'/>
          </div>
          
          <div className="notesinput" >
-         <input type="text" name="notes"  value="notes" />
+         <textarea type="text" name="notes"  value="notes" cols='60' rows='7' >
+         </textarea>
+         <button name="confirm" id="confirm" onClik={this.handler}/> 
          </div>
          
 
