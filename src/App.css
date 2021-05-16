@@ -184,10 +184,38 @@
 
 }
 
+.notesconfirm {
+    display: flex;
+    flex-direction: column;
+    float:left;
+    width:50%;
+    background-color:pink;
+    
+}
 .notesinput {
-  position:relative;
-  left:5%;
-  top: 10%;
-  width:50%;
+  width:100%;
   float:left;
-}  
+  height: 45%;
+  background-color:green;
+} 
+
+.confirmbutton {
+  left:5%;
+  float: left;
+  width:100%;
+  background-color: orange;
+}
+
+#notes {
+   position:relative;
+   left:10%;
+   top:10%;
+   float:left;
+}
+
+#confirm {
+    position: relative;
+    top:10%;
+    left:20%;
+}
+ 
