@@ -28,6 +28,11 @@ export default class AdminNav extends Component {
 		 
 	 }
 
+    newButtonHandler=(event)=>{
+                  event.preventDefault();
+                  this.props.createHandler(true);
+         }
+
 	
 	render() {
 		return(
@@ -38,12 +43,12 @@ export default class AdminNav extends Component {
          <form>    
             <input type="text" name="adminsearch" id="adminsearch" onChange={this.myChangeHandler}/>
 
-            <input type="text" id="adminsub"  value="Пошук" onclic={this.hanle}/>
+            <input type="text" id="adminsub"  value="Пошук" onClick={this.hanle}/>
          </form> 
          </div>
         
          <div className="bottunscolum">
-             <button id="adminbutton">  New </button>
+             <button id="adminbutton" onClick={this.newButtonHandler}>  New   </button>
              <br/>
              <button id="adminbutton"> Update </button>
              <br/>

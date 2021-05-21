@@ -12,22 +12,27 @@ export default class AdminControl extends Component {
 	constructor(props) {
       super(props);
 	  this.state={inputtext:' '};
-          this.state={ismodifier: true};
-      this.handler = this.handler.bind(this);
+          this.state={createStatus:'false'};
+          this.state={ismodifier: 'true'};
+          
+          this.handler = this.handler.bind(this);
+          this.createHandler= this.createHandler.bind(this);
    }
    
    
 	
 	 handler(inputtextin){
 		 this.setState({inputtext:inputtextin});
-		//alert(this.state.inputtext);
-		
-	}
+		 }
+
+        createHandler(status){this.setState({createStatus:status});}
+
+
 	render() {
 		
-		if(this.state.ismodifier){return(
+		if(this.state.createStatus){return(
                 <div className="AdminControl">
-		< AdminNav  handle={this.props.handle} handler={this.handler} />
+		< AdminNav  handle={this.props.handle} handler={this.handler} createHandler={this.createHandler} />
 		< LogOut/>
                 <ModifierOutput/>
 		</div>
@@ -37,7 +42,7 @@ export default class AdminControl extends Component {
 
                 return(
 		<div className="AdminControl">
-		< AdminNav  handle={this.props.handle} handler={this.handler} />
+		< AdminNav  handle={this.props.handle} handler={this.handler} createHandler={this.createHandler}/>
 		< LogOut/>
                 <Output  data={this.props.data }/>
 		</div>
