@@ -4,6 +4,7 @@ import AdminNav from './AdminNav';
 import LogOut from './LogOut';
 import Output from './Output';
 import ModifierOutput from './ModifierOutput';
+import CreateModifierOutput from './CreateModifierOutput';
 
 
 
@@ -34,7 +35,7 @@ export default class AdminControl extends Component {
                 <div className="AdminControl">
 		< AdminNav  handle={this.props.handle} handler={this.handler} createHandler={this.createHandler} />
 		< LogOut/>
-                <ModifierOutput/>
+                <CreateModifierOutput/>
 		</div>
 		
                 );

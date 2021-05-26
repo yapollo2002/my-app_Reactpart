@@ -66,29 +66,6 @@ export default class Usermode extends Component {
        },
      ];
 
-             {/*      this.data = React.useMemo(
-        ()=>[
-       {
-         "phoneNumber": 1,
-         "model": 'World',
-         "issue": 'Hello',
-         "notes": 'World',
-       },
-       {
-         "phoneNumber": 2,
-         "model": 'rocks',
-         "issue": 'Hello',
-         "notes": 'World', 
-       },
-       {
-         "phoneNumber": 3,
-         "model": 'you want',
-         "issue": 'Hello',
-         "notes": 'World',
-       },
-     ],
-     []
-      )   */}
                 
         			
 
