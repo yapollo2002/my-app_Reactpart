@@ -7,34 +7,32 @@ import axios from 'axios';
 export default class CreateModifierOutput extends Component{
    constructor(props) {
       super(props);
-        this.state={pnoneNumber:'',
-                    model:'',
-                    issue:'',
-                    notes:'',	
-                    data:[]  
+        this.state={
+                    phoneNumber:'0993214823',
+                    model:'Sony',
+                    issue:'noise',
+                    notes:'temperarely',
+                    data:{phoneNum:321, brand:'Space'}	
+                      
                     };
    }
 
-                 changePhoneNumber=(event)=>{this.setState({phoneNumber:event.target.value})}
+                 changePhoneNumber=(event)=>{this.setState({phoneNumber:event.target.value})                       }
                        changeModel=(event)=>{this.setState({model:event.target.value})}
                        changeIssue=(event)=>{this.setState({issue:event.target.value})}
                        changeNotes=(event)=>{this.setState({notes:event.target.value})}
                         
                        
-         sendPost = ()=> {
-            const data = [
-       { 
-         
-         "phoneNumber": this.pnoneNumber ,
-         "model": this.model,
-         "issue": this.issue,
-         "notes": this.notes,
-       },
-        ];  
-		 //event.preventDefault();
-            this.setState({data:data});
-		// this.props.handle(this.state.telnum);
-		       axios.post('http://localhost:8080',this.data)
+         sendPost=(event)=>{
+            const data = {
+        "phoneNumber": this.state.phoneNumber,
+        "model": this.state.model,
+        "issue": this.state.issue,
+        "notes": this.state.notes
+    };
+           // this.setState({data:'555'});
+	   // console.log(this.state.data);	
+		      axios.post('http://localhost:8080', data)
 		 
 	 }
 
@@ -46,20 +44,20 @@ render(){
          <div className="descriptioninput">
          <p> CreateModifierMode </p>
          
-         <input type="text" name="phonenumber" onChange={this.changePhoneNumber}  />
+         <input type="text" name="phonenumber"   onChange={this.changePhoneNumber}  />
          <br/>
          <br/>
-         <input type="text" name="model"   onChange={this.changeModel} />
+         <input type="text" name="model"    onChange={this.changeModel} />
          <br/>
          <br/>
-         <input type="text" name="issue"  value="issue" onChange={this.changeIssue} />
+         <input type="text" name="issue"    onChange={this.changeIssue} />
          
          </div>
          
          <div className="notesconfirm">
          
          <div className="notesinput" >
-         <textarea type="text" name="notes" id="notes" value="notes" cols='60' rows='7'onChange={this.changeNotes} >
+         <textarea type="text" name="notes" id="notes"  cols='60' rows='7'onChange={this.changeNotes} >
          </textarea>
          </div>
          
