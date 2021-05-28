@@ -43,13 +43,16 @@ render(){
     	 
          <div className="descriptioninput">
          <p> CreateModifierMode </p>
-         
+         <br/>
+         <p> Phone Number </p>
          <input type="text" name="phonenumber"   onChange={this.changePhoneNumber}  />
          <br/>
          <br/>
+         <p> Model </p>
          <input type="text" name="model"    onChange={this.changeModel} />
          <br/>
          <br/>
+         <p> Issue </p>
          <input type="text" name="issue"    onChange={this.changeIssue} />
          
          </div>
@@ -57,6 +60,7 @@ render(){
          <div className="notesconfirm">
          
          <div className="notesinput" >
+         <p> Notes </p>
          <textarea type="text" name="notes" id="notes"  cols='60' rows='7'onChange={this.changeNotes} >
          </textarea>
          </div>
