@@ -33,7 +33,13 @@ export default class AdminNav extends Component {
                   this.props.createHandler(true);
          }
 
-	
+    updateButtonHandler=(event)=>{
+                  event.preventDefault();
+                  this.props.updateHandler(true);
+         }
+
+
+        
 	render() {
 		return(
              <div className="AdminNav">
@@ -43,14 +49,14 @@ export default class AdminNav extends Component {
          <form>    
             <input type="text" name="adminsearch" id="adminsearch" onChange={this.myChangeHandler}/>
 
-            <input type="text" id="adminsub"  value="Пошук" onClick={this.hanle}/>
+            <input type="text" id="adminsub"  value="Пошук" onClick={this.handle}/>
          </form> 
          </div>
         
          <div className="bottunscolum">
              <button id="adminbutton" onClick={this.newButtonHandler}>  New   </button>
              <br/>
-             <button id="adminbutton"> Update </button>
+             <button id="adminbutton" onClick={this.updateButtonHandler}> Update </button>
              <br/>
              <button id="adminbutton"> Delete </button>
          </div>
