@@ -38,7 +38,12 @@ export default class AdminNav extends Component {
                   this.props.updateHandler(true);
          }
 
+    deleteButtonHandler=(event)=>{
+                  event.preventDefault();
+                  this.props.deleteHandler(true);
+         }
 
+   
         
 	render() {
 		return(
@@ -58,7 +63,7 @@ export default class AdminNav extends Component {
              <br/>
              <button id="adminbutton" onClick={this.updateButtonHandler}> Update </button>
              <br/>
-             <button id="adminbutton"> Delete </button>
+             <button id="adminbutton" onClick={this.deleteButtonHandler}> Delete </button>
          </div>
          </div>
                 )		
