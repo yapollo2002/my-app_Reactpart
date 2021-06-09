@@ -24,6 +24,7 @@ import axios from 'axios';
             .then(response=>{
                if(response.status===200){
                        this.props.changeAdminStatus(this.state.login, this.state.pass)
+                               
                       }
                 //else this.setState({errormessage:'Error'})
             } )

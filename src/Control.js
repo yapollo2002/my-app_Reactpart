@@ -23,7 +23,7 @@ export default class Control extends Component {
 		return(
 		<div className="Control">
 		< UserNav handle={this.props.handle} handler={this.handler} />
-		< Login/>
+		< Login changeAdminStatus={this.props.changeAdminStatus}/>
 		</div>
 		);
 		

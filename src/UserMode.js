@@ -78,7 +78,7 @@ export default class Usermode extends Component {
 		
 		<div className="UserMode">
 
-	       	<Control handle={this.handle}/> 
+	       	<Control handle={this.handle} changeAdminStatus={this.props.changeAdminStatus}/> 
 			<Output data={this.state.data} ismodifier={this.state.ismodifier}/>
 			                
 			      

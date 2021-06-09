@@ -4,7 +4,7 @@ import React, {Component} from 'react';
   render() {
      return(
 	 <div className="Login">
-      <p>  Login </p>
+      <p>  LogOut </p>
 	  </div>
 )
 }
