@@ -29,7 +29,12 @@ export default class CreateModifierOutput extends Component{
                    
                        
          sendDelete=(event)=>{
-            axios.delete('http://localhost:8080'+'/'+this.props.data.id)
+            axios.delete('http://localhost:8080'+'/'+this.props.data.id, {
+             auth:{
+                   username:this.state.login,
+                   password:this.state.pass
+                  }
+           })
 		 
 	 }
 

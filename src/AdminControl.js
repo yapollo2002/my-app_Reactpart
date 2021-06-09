@@ -43,7 +43,7 @@ export default class AdminControl extends Component {
                 <div className="AdminControl">
 		< AdminNav  handle={this.props.handle} handler={this.handler} createHandler={this.createHandler} updateHandler={this.updateHandler} deleteHandler={this.deleteHandler}/>
 		< LogOut/>
-                <CreateModifierOutput/>
+                <CreateModifierOutput login={this.props.login} pass={this.props.pass}/>
 		</div>
 		
                 );
@@ -53,7 +53,7 @@ export default class AdminControl extends Component {
                 <div className="AdminControl">
 		< AdminNav  handle={this.props.handle} handler={this.handler} updateHandler={this.updateHandler} createHandler={this.createHandler} deleteHandler={this.deleteHandler} />
 		< LogOut/>
-                <UpdateModifierOutput data={this.props.data}/>
+                <UpdateModifierOutput data={this.props.data} login={this.props.login} pass={this.props.pass}/>
 		</div>
 		);
                 }
@@ -62,7 +62,7 @@ export default class AdminControl extends Component {
                 <div className="AdminControl">
 		< AdminNav  handle={this.props.handle} handler={this.handler} updateHandler={this.updateHandler} createHandler={this.createHandler}  deleteHandler={this.deleteHandler}/>
 		< LogOut/>
-                <DeleteModifierOutput data={this.props.data}/>
+                <DeleteModifierOutput data={this.props.data} login={this.props.login} pass={this.props.pass}/>
 		</div>
 		);
                 }                 

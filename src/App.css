@@ -237,12 +237,7 @@
 
 #login {
     position: relative;
-    top: 10%;
-    left:20%;
+    top: 40%;
+    left:30%;
 }
 
-#pass {
-    position: relative;
-    top: 40%;
-    left: 40%;
-} 

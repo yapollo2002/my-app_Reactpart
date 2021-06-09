@@ -32,7 +32,12 @@ export default class CreateModifierOutput extends Component{
     };
            // this.setState({data:'555'});
 	   // console.log(this.state.data);	
-		      axios.post('http://localhost:8080', data)
+		      axios.post('http://localhost:8080', data, {
+             auth:{
+                   username:this.state.login,
+                   password:this.state.pass
+                  }
+           } )
 		 
 	 }
 

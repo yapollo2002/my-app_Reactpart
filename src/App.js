@@ -8,13 +8,22 @@ class App extends React.Component {
   constructor(props) {
     super(props);
    // this.handleChange = this.handleChange.bind(this);
-   this.state = {isAdminMode: false};
+   this.state = {isAdminMode: false,                                                            
+                 login:'',
+                 pass:''
+                  };
+   
   }
   //const isAdminMode={this.state.isAdminMode};
+    chengeAdminStatus=(login, pass)=> {
+                            this.setState({isAdminMode:true});
+                            this.setState({login:login});
+                            this.setState({pass:pass});
+                           }
 	 render() {
 		 //const isAdminMode={this.state.isAdminMode};
 		 if (this.state.isAdminMode) {
-    return <AdminMode isAdminMode={this.state.isAdminMode}/>;
+    return <AdminMode isAdminMode={this.state.isAdminMode} login={this.state.login}  pass={this.state.pass} />;
   }
   return <UserMode />;
 		 

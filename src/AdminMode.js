@@ -27,7 +27,7 @@ export default class AdminMode extends Component {
 	render () {
     
     return (
-	<div > <AdminControl data={this.state.data} handle={this.handle}/>  </div>
+	<div > <AdminControl data={this.state.data} handle={this.handle} login={this.props.login} pass={this.props.pass}/>  </div>
         	
            );  
   }
