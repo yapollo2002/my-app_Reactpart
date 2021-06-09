@@ -125,11 +125,14 @@
    background-color:orange;
 }
 .Login{
+    display:flex;
     width: 40%;
-    height:30%;
+    height:100%;
     float: left;
     background-color:red;
 }
+
+
 
 .LogOut{
     width:40;
@@ -218,4 +221,28 @@
     top:10%;
     left:20%;
 }
- 
+
+.credentialinput {
+    height:100%;
+    width:60%;
+    background-color:orange;
+}
+
+.loginButton   {
+    float:left;
+    height:100%;
+    width:40%;
+    background-color: green;
+}
+
+#login {
+    position: relative;
+    top: 10%;
+    left:20%;
+}
+
+#pass {
+    position: relative;
+    top: 40%;
+    left: 40%;
+} 
