@@ -8,7 +8,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
    // this.handleChange = this.handleChange.bind(this);
-   this.state = {isAdminMode: true,                                                            
+   this.state = {isAdminMode: false,                                                            
                  login:'',
                  pass:''
                   };
